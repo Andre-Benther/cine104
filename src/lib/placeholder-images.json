@@ -3,7 +3,7 @@
     {
       "id": "hero-background",
       "description": "Background image for the hero section showing a cinema screen.",
-      "imageUrl": "/hero.jpg",
+      "imageUrl": "/hero-background.jpg",
       "imageHint": "cinema screen"
     },
     {
