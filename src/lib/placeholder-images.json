@@ -7,16 +7,10 @@
       "imageHint": "cinema screen"
     },
     {
-      "id": "gallery-1",
-      "description": "A photo of the cinema auditorium and screen.",
-      "imageUrl": "/A1.jpg",
-      "imageHint": "cinema auditorium"
-    },
-    {
-      "id": "gallery-2",
-      "description": "A photo of the external facade of Cine 104.",
-      "imageUrl": "/A2.jpg",
-      "imageHint": "cinema facade"
+      "id": "gallery-4",
+      "description": "A photo showing the seats from the stage.",
+      "imageUrl": "/A4.jpg",
+      "imageHint": "cinema seats"
     },
     {
       "id": "gallery-3",
@@ -25,10 +19,16 @@
       "imageHint": "cinema stage"
     },
     {
-      "id": "gallery-4",
-      "description": "A photo showing the seats from the stage.",
-      "imageUrl": "/A4.jpg",
-      "imageHint": "cinema seats"
+      "id": "gallery-2",
+      "description": "A photo of the external facade of Cine 104.",
+      "imageUrl": "/A2.jpg",
+      "imageHint": "cinema facade"
+    },
+    {
+      "id": "gallery-1",
+      "description": "A photo of the cinema auditorium and screen.",
+      "imageUrl": "/A1.jpg",
+      "imageHint": "cinema auditorium"
     },
     {
       "id": "gallery-5",
