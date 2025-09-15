@@ -9,25 +9,25 @@
     {
       "id": "gallery-1",
       "description": "A photo of the cinema auditorium and screen.",
-      "imageUrl": "/g1.png",
+      "imageUrl": "/a1.jpg",
       "imageHint": "cinema auditorium"
     },
     {
       "id": "gallery-2",
       "description": "A photo of the external facade of Cine 104.",
-      "imageUrl": "/g2.png",
+      "imageUrl": "/a2.jpg",
       "imageHint": "cinema facade"
     },
     {
       "id": "gallery-3",
       "description": "A view of the stage inside the cinema.",
-      "imageUrl": "/g3.png",
+      "imageUrl": "/a3.jpg",
       "imageHint": "cinema stage"
     },
     {
       "id": "gallery-4",
       "description": "A photo showing the seats from the stage.",
-      "imageUrl": "/g4.jpg",
+      "imageUrl": "/a4.jpg",
       "imageHint": "cinema seats"
     },
     {
