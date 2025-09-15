@@ -11,7 +11,7 @@ export default function Gallery() {
     p.id === 'gallery-5'
   );
 
-  const orderedImages = ['gallery-1', 'gallery-2', 'gallery-4', 'gallery-5'].map(id => 
+  const orderedImages = ['gallery-5', 'gallery-4', 'gallery-2', 'gallery-1'].map(id => 
     galleryImages.find(img => img.id === id)
   ).filter(Boolean);
 
