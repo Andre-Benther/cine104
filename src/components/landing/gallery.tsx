@@ -30,7 +30,7 @@ export default function Gallery() {
                     src={image.imageUrl}
                     alt={image.description}
                     width={600}
-                    height={600}
+                    height={400}
                     className="object-cover w-full h-full"
                     data-ai-hint={image.imageHint}
                   />
