@@ -3,7 +3,12 @@ import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Gallery() {
-  const galleryImages = PlaceHolderImages.filter(p => p.id.startsWith('gallery-'));
+  const galleryImages = PlaceHolderImages.filter(p => 
+    p.id === 'gallery-1' || 
+    p.id === 'gallery-2' || 
+    p.id === 'gallery-3' || 
+    p.id === 'gallery-4'
+  );
 
   return (
     <section className="py-16 md:py-24 bg-background">
