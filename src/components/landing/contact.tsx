@@ -5,19 +5,19 @@ import { Calendar, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <section className="py-16 md:py-24 bg-secondary">
+    <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold font-headline text-primary">
-          Entre em Contato
+          Vamos Realizar Seu Evento?
         </h2>
         <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Estamos ansiosos para receber seu evento. Agende uma visita ou reserve sua data.
+          Estamos ansiosos para transformar sua ideia em realidade. Entre em contato e vamos conversar sobre seu projeto.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 transition-transform transform hover:scale-105">
             <Link href={createWhatsAppLink(WHATSAPP_MESSAGES.scheduleDate)}>
               <Calendar className="mr-2 h-5 w-5" />
-              Agendar Data
+              Reservar Data
             </Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="transition-transform transform hover:scale-105">

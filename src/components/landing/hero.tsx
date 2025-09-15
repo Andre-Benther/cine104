@@ -18,22 +18,22 @@ export default function Hero() {
       <div className="absolute inset-0 bg-primary/70" />
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline text-shadow-lg shadow-black/30">
-          Bem-vindo ao Cine 104
+          Seu Evento no Coração de BH
         </h1>
         <p className="mt-4 max-w-2xl text-lg md:text-xl text-shadow-md shadow-black/30 text-primary-foreground/90">
-          O seu espaço exclusivo para eventos, projeções e momentos inesquecíveis.
+          Transforme seu evento em um momento inesquecível em um patrimônio histórico que une tradição e modernidade.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-transform transform hover:scale-105">
             <Link href={createWhatsAppLink(WHATSAPP_MESSAGES.scheduleDate)}>
               <Calendar className="mr-2 h-5 w-5" />
-              Agendar Data
+              Reserve Sua Data
             </Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-transform transform hover:scale-105">
             <Link href={createWhatsAppLink(WHATSAPP_MESSAGES.scheduleVisit)}>
               <MapPin className="mr-2 h-5 w-5" />
-              Agendar Visita
+              Agende uma Visita
             </Link>
           </Button>
         </div>
