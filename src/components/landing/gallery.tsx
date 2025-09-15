@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -39,6 +40,9 @@ export default function Gallery() {
             </Card>
           ))}
         </div>
+        <p className="text-center text-xs text-muted-foreground mt-8">
+          Imagens meramente ilustrativas.
+        </p>
       </div>
     </section>
   );
