@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = "5531997135632";
+export const WHATSAPP_NUMBER = "5531997143677";
 
 export const WHATSAPP_MESSAGES = {
   scheduleDate: "Olá! Gostaria de agendar uma data no Cine 104.",
