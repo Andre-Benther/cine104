@@ -19,22 +19,16 @@
       "imageHint": "cinema stage"
     },
     {
-      "id": "gallery-2",
-      "description": "A photo of the external facade of Cine 104.",
-      "imageUrl": "/A2.jpg",
-      "imageHint": "cinema facade"
+      "id": "gallery-5",
+      "description": "A close-up of the cinema chairs.",
+      "imageUrl": "/A5.jpg",
+      "imageHint": "cinema chairs"
     },
     {
       "id": "gallery-1",
       "description": "A photo of the cinema auditorium and screen.",
       "imageUrl": "/A1.jpg",
       "imageHint": "cinema auditorium"
-    },
-    {
-      "id": "gallery-5",
-      "description": "A close-up of the cinema chairs.",
-      "imageUrl": "/gallery-5.jpg",
-      "imageHint": "cinema chairs"
     }
   ]
 }
