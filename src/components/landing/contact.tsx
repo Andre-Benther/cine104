@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { createWhatsAppLink, WHATSAPP_MESSAGES } from '@/lib/config';
@@ -43,7 +44,7 @@ export default function Contact() {
             </div>
             <div>
               <h3 className="font-bold text-lg text-primary">Telefone</h3>
-              <p className="text-muted-foreground">(31) 3248-7400</p>
+              <p className="text-muted-foreground">(31) 99714-3677</p>
             </div>
           </div>
           <div className="flex items-start space-x-4">
