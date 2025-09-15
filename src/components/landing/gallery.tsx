@@ -20,11 +20,11 @@ export default function Gallery() {
           {galleryImages.map(image => (
             <Card key={image.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-0">
-                <div className="aspect-w-4 aspect-h-3">
+                <div className="aspect-w-1 aspect-h-1">
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
-                    width={800}
+                    width={600}
                     height={600}
                     className="object-cover w-full h-full"
                     data-ai-hint={image.imageHint}

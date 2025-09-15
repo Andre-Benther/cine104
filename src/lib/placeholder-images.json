@@ -3,31 +3,31 @@
     {
       "id": "hero-background",
       "description": "Background image for the hero section showing a cinema screen.",
-      "imageUrl": "https://picsum.photos/seed/cine104hero/1920/1080",
+      "imageUrl": "/hero-background.jpg",
       "imageHint": "cinema screen"
     },
     {
       "id": "gallery-1",
       "description": "A photo of empty cinema seats.",
-      "imageUrl": "https://picsum.photos/seed/cine104g1/800/600",
+      "imageUrl": "/gallery-1.jpg",
       "imageHint": "cinema seats"
     },
     {
       "id": "gallery-2",
       "description": "A photo of a vintage movie projector.",
-      "imageUrl": "https://picsum.photos/seed/cine104g2/800/600",
+      "imageUrl": "/gallery-2.jpg",
       "imageHint": "movie projector"
     },
     {
       "id": "gallery-3",
       "description": "A photo of a cinema theater entrance.",
-      "imageUrl": "https://picsum.photos/seed/cine104g3/800/600",
+      "imageUrl": "/gallery-3.jpg",
       "imageHint": "theater entrance"
     },
     {
       "id": "gallery-4",
       "description": "A photo of popcorn and cinema snacks.",
-      "imageUrl": "https://picsum.photos/seed/cine104g4/800/600",
+      "imageUrl": "/gallery-4.jpg",
       "imageHint": "popcorn snacks"
     }
   ]
