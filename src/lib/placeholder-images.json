@@ -3,32 +3,38 @@
     {
       "id": "hero-background",
       "description": "Background image for the hero section showing a cinema screen.",
-      "imageUrl": "/hero-background.jpg",
+      "imageUrl": "https://picsum.photos/seed/hero-bg/1280/720",
       "imageHint": "cinema screen"
     },
     {
       "id": "gallery-1",
       "description": "A photo of the cinema auditorium and screen.",
-      "imageUrl": "https://picsum.photos/seed/g1/600/600",
+      "imageUrl": "https://picsum.photos/seed/gallery1/600/600",
       "imageHint": "cinema auditorium"
     },
     {
       "id": "gallery-2",
       "description": "A photo of the external facade of Cine 104.",
-      "imageUrl": "https://picsum.photos/seed/g2/600/600",
+      "imageUrl": "https://picsum.photos/seed/gallery2/600/600",
       "imageHint": "cinema facade"
     },
     {
       "id": "gallery-3",
       "description": "A view of the stage inside the cinema.",
-      "imageUrl": "https://picsum.photos/seed/g3/600/600",
+      "imageUrl": "https://picsum.photos/seed/gallery3/600/600",
       "imageHint": "cinema stage"
     },
     {
       "id": "gallery-4",
       "description": "A photo showing the seats from the stage.",
-      "imageUrl": "https://picsum.photos/seed/g4/600/600",
+      "imageUrl": "https://picsum.photos/seed/gallery4/600/600",
       "imageHint": "cinema seats"
+    },
+    {
+      "id": "gallery-5",
+      "description": "A close-up of the cinema chairs.",
+      "imageUrl": "https://picsum.photos/seed/gallery5/600/600",
+      "imageHint": "cinema chairs"
     }
   ]
 }
