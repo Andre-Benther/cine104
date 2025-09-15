@@ -5,6 +5,9 @@ import { createWhatsAppLink, WHATSAPP_MESSAGES } from '@/lib/config';
 import { Calendar, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Contact() {
+  const address = "Praça Rui Barbosa, 104 - Centro, Belo Horizonte, MG, 30160-040";
+  const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+
   return (
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 text-center">
@@ -35,7 +38,9 @@ export default function Contact() {
             </div>
             <div>
               <h3 className="font-bold text-lg text-primary">Endereço</h3>
-              <p className="text-muted-foreground">Praça Rui Barbosa, 104 - Centro<br/>Belo Horizonte, MG, 30160-040</p>
+              <a href={mapsLink} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:underline">
+                Praça Rui Barbosa, 104 - Centro<br/>Belo Horizonte, MG, 30160-040
+              </a>
             </div>
           </div>
           <div className="flex items-start space-x-4">
@@ -44,7 +49,7 @@ export default function Contact() {
             </div>
             <div>
               <h3 className="font-bold text-lg text-primary">Telefone</h3>
-              <p className="text-muted-foreground">(31) 99714-3677</p>
+              <a href="tel:31997143677" className="text-muted-foreground hover:underline">(31) 99714-3677</a>
             </div>
           </div>
           <div className="flex items-start space-x-4">
@@ -53,7 +58,7 @@ export default function Contact() {
             </div>
             <div>
               <h3 className="font-bold text-lg text-primary">Email</h3>
-              <p className="text-muted-foreground">contato@cine104.com.br</p>
+              <a href="mailto:contato@cine104.com.br" className="text-muted-foreground hover:underline">contato@cine104.com.br</a>
             </div>
           </div>
         </div>
