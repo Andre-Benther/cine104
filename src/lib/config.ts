@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = "5511999999999"; // TODO: Replace with a real number
+export const WHATSAPP_NUMBER = "5531997135632";
 
 export const WHATSAPP_MESSAGES = {
   scheduleDate: "Olá! Gostaria de agendar uma data no Cine 104.",
