@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -8,18 +7,14 @@ import { Calendar, MapPin } from 'lucide-react';
 export default function Hero() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
 
+  const heroStyle = heroImage ? { backgroundImage: `url(${heroImage.imageUrl})` } : {};
+
   return (
-    <section className="relative w-full h-[85vh] text-white">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={heroImage.imageHint}
-        />
-      )}
+    <section 
+      className="relative w-full h-[85vh] text-white bg-cover bg-center"
+      style={heroStyle}
+      data-ai-hint={heroImage?.imageHint}
+    >
       <div className="absolute inset-0 bg-primary/70" />
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline text-shadow-lg shadow-black/30">
