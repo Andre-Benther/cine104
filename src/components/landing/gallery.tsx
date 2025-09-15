@@ -4,15 +4,9 @@ import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Gallery() {
-  const galleryImages = PlaceHolderImages.filter(p => 
-    p.id === 'gallery-1' || 
-    p.id === 'gallery-3' || 
-    p.id === 'gallery-4' || 
-    p.id === 'gallery-5'
-  );
-
-  const orderedImages = ['gallery-5', 'gallery-4', 'gallery-3', 'gallery-1'].map(id => 
-    galleryImages.find(img => img.id === id)
+  const galleryImageIds = ['gallery-w1', 'gallery-w3', 'gallery-w2'];
+  const galleryImages = galleryImageIds.map(id => 
+    PlaceHolderImages.find(img => img.id === id)
   ).filter(Boolean);
 
   return (
@@ -26,8 +20,8 @@ export default function Gallery() {
             Detalhes que tornam o Cine 104 o cenário perfeito para o seu evento.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {orderedImages.map(image => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {galleryImages.map(image => (
             image && (
               <Card key={image.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
                 <CardContent className="p-0">

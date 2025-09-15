@@ -7,28 +7,22 @@
       "imageHint": "cinema screen"
     },
     {
-      "id": "gallery-1",
+      "id": "gallery-w1",
       "description": "A photo of the cinema auditorium and screen.",
-      "imageUrl": "/A1.jpg",
-      "imageHint": "cinema auditorium"
+      "imageUrl": "/w1.jpg",
+      "imageHint": "cinema event"
     },
     {
-      "id": "gallery-3",
+      "id": "gallery-w3",
       "description": "A view of the cinema from another angle.",
-      "imageUrl": "/A3.jpg",
-      "imageHint": "cinema seats"
+      "imageUrl": "/w3.jpg",
+      "imageHint": "cinema presentation"
     },
     {
-      "id": "gallery-4",
+      "id": "gallery-w2",
       "description": "A photo showing the seats from the stage.",
-      "imageUrl": "/A4.jpg",
-      "imageHint": "cinema stage"
-    },
-    {
-      "id": "gallery-5",
-      "description": "A close-up of the cinema chairs.",
-      "imageUrl": "/A5.jpg",
-      "imageHint": "cinema chairs"
+      "imageUrl": "/w2.jpg",
+      "imageHint": "audience event"
     }
   ]
 }
