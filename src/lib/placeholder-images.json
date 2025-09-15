@@ -8,27 +8,27 @@
     },
     {
       "id": "gallery-1",
-      "description": "A photo of empty cinema seats.",
-      "imageUrl": "/gallery-1.jpg",
-      "imageHint": "cinema seats"
+      "description": "A photo of the cinema auditorium and screen.",
+      "imageUrl": "https://picsum.photos/seed/g1/600/600",
+      "imageHint": "cinema auditorium"
     },
     {
       "id": "gallery-2",
-      "description": "A photo of a vintage movie projector.",
-      "imageUrl": "/gallery-2.jpg",
-      "imageHint": "movie projector"
+      "description": "A photo of the external facade of Cine 104.",
+      "imageUrl": "https://picsum.photos/seed/g2/600/600",
+      "imageHint": "cinema facade"
     },
     {
       "id": "gallery-3",
-      "description": "A photo of a cinema theater entrance.",
-      "imageUrl": "/gallery-3.jpg",
-      "imageHint": "theater entrance"
+      "description": "A view of the stage inside the cinema.",
+      "imageUrl": "https://picsum.photos/seed/g3/600/600",
+      "imageHint": "cinema stage"
     },
     {
       "id": "gallery-4",
-      "description": "A photo of popcorn and cinema snacks.",
-      "imageUrl": "/gallery-4.jpg",
-      "imageHint": "popcorn snacks"
+      "description": "A photo showing the seats from the stage.",
+      "imageUrl": "https://picsum.photos/seed/g4/600/600",
+      "imageHint": "cinema seats"
     }
   ]
 }
