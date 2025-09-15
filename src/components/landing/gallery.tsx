@@ -6,12 +6,12 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 export default function Gallery() {
   const galleryImages = PlaceHolderImages.filter(p => 
     p.id === 'gallery-1' || 
-    p.id === 'gallery-2' || 
+    p.id === 'gallery-3' || 
     p.id === 'gallery-4' || 
     p.id === 'gallery-5'
   );
 
-  const orderedImages = ['gallery-5', 'gallery-4', 'gallery-2', 'gallery-1'].map(id => 
+  const orderedImages = ['gallery-5', 'gallery-4', 'gallery-3', 'gallery-1'].map(id => 
     galleryImages.find(img => img.id === id)
   ).filter(Boolean);
 
