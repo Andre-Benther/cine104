@@ -7,15 +7,21 @@
       "imageHint": "cinema screen"
     },
     {
-      "id": "gallery-4",
-      "description": "A photo showing the seats from the stage.",
-      "imageUrl": "/A4.jpg",
+      "id": "gallery-1",
+      "description": "A photo of the cinema auditorium and screen.",
+      "imageUrl": "/A1.jpg",
+      "imageHint": "cinema auditorium"
+    },
+    {
+      "id": "gallery-2",
+      "description": "A view of the cinema from another angle.",
+      "imageUrl": "/A2.jpg",
       "imageHint": "cinema seats"
     },
     {
-      "id": "gallery-3",
-      "description": "A view of the stage inside the cinema.",
-      "imageUrl": "/A3.jpg",
+      "id": "gallery-4",
+      "description": "A photo showing the seats from the stage.",
+      "imageUrl": "/A4.jpg",
       "imageHint": "cinema stage"
     },
     {
@@ -23,12 +29,6 @@
       "description": "A close-up of the cinema chairs.",
       "imageUrl": "/A5.jpg",
       "imageHint": "cinema chairs"
-    },
-    {
-      "id": "gallery-1",
-      "description": "A photo of the cinema auditorium and screen.",
-      "imageUrl": "/A1.jpg",
-      "imageHint": "cinema auditorium"
     }
   ]
 }

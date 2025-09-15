@@ -7,9 +7,13 @@ export default function Gallery() {
   const galleryImages = PlaceHolderImages.filter(p => 
     p.id === 'gallery-1' || 
     p.id === 'gallery-2' || 
-    p.id === 'gallery-3' || 
-    p.id === 'gallery-4'
+    p.id === 'gallery-4' || 
+    p.id === 'gallery-5'
   );
+
+  const orderedImages = ['gallery-1', 'gallery-2', 'gallery-4', 'gallery-5'].map(id => 
+    galleryImages.find(img => img.id === id)
+  ).filter(Boolean);
 
   return (
     <section className="py-16 md:py-24 bg-secondary">
@@ -23,21 +27,23 @@ export default function Gallery() {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {galleryImages.map(image => (
-            <Card key={image.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
-              <CardContent className="p-0">
-                <div className="aspect-w-1 aspect-h-1">
-                  <Image
-                    src={image.imageUrl}
-                    alt={image.description}
-                    width={400}
-                    height={400}
-                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
-                    data-ai-hint={image.imageHint}
-                  />
-                </div>
-              </CardContent>
-            </Card>
+          {orderedImages.map(image => (
+            image && (
+              <Card key={image.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+                <CardContent className="p-0">
+                  <div className="aspect-w-1 aspect-h-1">
+                    <Image
+                      src={image.imageUrl}
+                      alt={image.description}
+                      width={400}
+                      height={400}
+                      className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                      data-ai-hint={image.imageHint}
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            )
           ))}
         </div>
         <p className="text-center text-xs text-muted-foreground mt-8">
