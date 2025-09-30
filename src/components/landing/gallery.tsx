@@ -2,12 +2,11 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Gallery() {
-  // The user wants the order w1, w3, w2
-  const galleryImages = [
-    PlaceHolderImages.find(p => p.imageUrl === '/w1.jpg'),
-    PlaceHolderImages.find(p => p.imageUrl === '/w3.jpg'),
-    PlaceHolderImages.find(p => p.imageUrl === '/w2.jpg')
-  ].filter(Boolean) as (typeof PlaceHolderImages[number])[];
+  const galleryImagesData = [
+    { id: 'w1', imageUrl: '/w1.jpg', description: 'Corporate event setup at Cine 104', imageHint: 'corporate event' },
+    { id: 'w3', imageUrl: '/w3.jpg', description: 'Kids party at Cine 104', imageHint: 'kids party' },
+    { id: 'w2', imageUrl: '/w2.jpg', description: 'Empty auditorium of Cine 104', imageHint: 'cinema auditorium' },
+  ];
 
   return (
     <section className="py-16 md:py-24 bg-secondary" id="gallery">
@@ -21,7 +20,7 @@ export default function Gallery() {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {galleryImages.map((image) => (
+          {galleryImagesData.map((image) => (
             <div key={image.id} className="relative aspect-square overflow-hidden rounded-lg group">
               <Image
                 src={image.imageUrl}

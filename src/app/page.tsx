@@ -1,7 +1,7 @@
 import Header from '@/components/landing/header';
 import Hero from '@/components/landing/hero';
 import About from '@/components/landing/about';
-import EventTypes from '@/components/landing/event-types';
+import Gallery from '@/components/landing/gallery';
 import Contact from '@/components/landing/contact';
 import Footer from '@/components/landing/footer';
 
@@ -12,7 +12,7 @@ export default function LandingPage() {
       <main className="flex-1">
         <Hero />
         <About />
-        <EventTypes />
+        <Gallery />
         <Contact />
       </main>
       <Footer />
