@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Gallery() {
   const galleryImagesData = [
