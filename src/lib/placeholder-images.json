@@ -9,13 +9,13 @@
     {
       "id": "event-corporate",
       "description": "A photo of a corporate event or presentation.",
-      "imageUrl": "https://images.unsplash.com/photo-1758691736082-b69a65770026?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y29ycG9yYXRlJTIwcHJlc2VudGF0aW9ufGVufDB8fHx8MTc1OTIwOTAwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/w1.jpg",
       "imageHint": "corporate presentation"
     },
     {
       "id": "event-kids",
       "description": "A photo of a colourful kids party.",
-      "imageUrl": "https://images.unsplash.com/photo-1554727225-ee66ff0a1bc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraWRzJTIwcGFydHl8ZW58MHx8fHwxNzU5Mjc2NTYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/w3.jpg",
       "imageHint": "kids party"
     },
     {
