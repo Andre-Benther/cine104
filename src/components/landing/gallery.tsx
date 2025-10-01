@@ -2,11 +2,10 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Gallery() {
-  // The user wants the order w1, w3, w2
   const galleryImages = [
     PlaceHolderImages.find(p => p.imageUrl === '/w1.jpg'),
-    PlaceHolderImages.find(p => p.imageUrl === '/w3.jpg'),
-    PlaceHolderImages.find(p => p.imageUrl === '/w2.jpg')
+    PlaceHolderImages.find(p => p.imageUrl === '/w2.jpg'),
+    PlaceHolderImages.find(p => p.imageUrl === '/w3.jpg')
   ].filter(Boolean) as (typeof PlaceHolderImages[number])[];
 
   return (
