@@ -1,12 +1,29 @@
 // Caminho do arquivo: src/components/landing/gallery.tsx
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Gallery() {
-  const galleryImageIds = ['w1', 'w2', 'w3'];
-  const galleryImages = galleryImageIds.map(id => 
-    PlaceHolderImages.find(p => p.id === id)
-  ).filter(Boolean) as (typeof PlaceHolderImages[number])[];
+  const galleryImages = [
+    { id: 'w1', imageUrl: '/w1.jpg', description: 'Imagem 1', imageHint: 'Imagem 1' },
+    { id: 'w2', imageUrl: '/w2.jpg', description: 'Imagem 2', imageHint: 'Imagem 2' },
+    { id: 'w3', imageUrl: '/w3.jpg', description: 'Imagem 3', imageHint: 'Imagem 3' }
+  ];
+
+  // Estilos CSS que substituem as classes do Tailwind para o nosso teste
+  const gridContainerStyle: React.CSSProperties = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)', // Equivalente a 'lg:grid-cols-3'
+    gap: '16px', // Equivalente a 'gap-4'
+  };
+
+  const imageContainerStyle: React.CSSProperties = {
+    position: 'relative', // Equivalente a 'relative'
+    width: '100%', // Equivalente a 'w-full'
+    aspectRatio: '1 / 1', // Equivalente a 'aspect-square'
+  };
+
+  const imageStyle: React.CSSProperties = {
+    objectFit: 'cover', // Equivalente a 'object-cover'
+  };
 
   return (
     <section className="py-16 md:py-24 bg-secondary" id="gallery">
@@ -19,20 +36,22 @@ export default function Gallery() {
             Explore um pouco do charme e da versatilidade do Cine 104.
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        {/* Usando os estilos inline para o teste */}
+        <div style={gridContainerStyle}>
           {galleryImages.map((image) => (
-            <div key={image.id} className="relative aspect-square overflow-hidden rounded-lg group">
+            <div key={image.id} style={imageContainerStyle}>
               <Image
                 src={image.imageUrl}
                 alt={image.description}
                 fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-                data-ai-hint={image.imageHint}
+                style={imageStyle} // Usando o style prop em vez de className
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
           ))}
         </div>
+
          <p className="text-center text-xs text-muted-foreground mt-4">
           Imagens meramente ilustrativas.
         </p>
