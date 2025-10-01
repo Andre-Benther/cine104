@@ -1,9 +1,12 @@
+// Caminho do arquivo: src/components/landing/gallery.tsx
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Gallery() {
-  const imageIds = ['w1', 'w2', 'w3'];
-  const galleryImages = imageIds.map(id => PlaceHolderImages.find(p => p.id === id)).filter(Boolean) as (typeof PlaceHolderImages[number])[];
+  const galleryImageIds = ['w1', 'w2', 'w3'];
+  const galleryImages = galleryImageIds.map(id => 
+    PlaceHolderImages.find(p => p.id === id)
+  ).filter(Boolean) as (typeof PlaceHolderImages[number])[];
 
   return (
     <section className="py-16 md:py-24 bg-secondary" id="gallery">
@@ -25,6 +28,7 @@ export default function Gallery() {
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
                 data-ai-hint={image.imageHint}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
           ))}
