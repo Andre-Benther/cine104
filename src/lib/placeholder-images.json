@@ -3,26 +3,26 @@
     {
       "id": "hero-background",
       "description": "Background image for the hero section showing a cinema screen.",
-      "imageUrl": "/hero-background.jpg",
+      "imageUrl": "https://images.unsplash.com/photo-1604975701397-6365ccbd028a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaW5lbWElMjBzY3JlZW58ZW58MHx8fHwxNzU5MjY4MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cinema screen"
     },
     {
-      "id": "event-corporate",
-      "description": "A photo of a corporate event or presentation.",
+      "id": "w1",
+      "description": "Imagem 1 da galeria do Cine 104.",
       "imageUrl": "/w1.jpg",
-      "imageHint": "corporate presentation"
+      "imageHint": "cinema event"
     },
     {
-      "id": "event-kids",
-      "description": "A photo of a colourful kids party.",
-      "imageUrl": "/w3.jpg",
-      "imageHint": "kids party"
-    },
-    {
-      "id": "event-other",
-      "description": "A photo showing the empty cinema auditorium.",
+      "id": "w2",
+      "description": "Imagem 2 da galeria do Cine 104.",
       "imageUrl": "/w2.jpg",
-      "imageHint": "cinema auditorium"
+      "imageHint": "cinema audience"
+    },
+    {
+      "id": "w3",
+      "description": "Imagem 3 da galeria do Cine 104.",
+      "imageUrl": "/w3.jpg",
+      "imageHint": "stage presentation"
     }
   ]
 }

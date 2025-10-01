@@ -2,11 +2,8 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Gallery() {
-  const galleryImages = [
-    PlaceHolderImages.find(p => p.imageUrl === '/w1.jpg'),
-    PlaceHolderImages.find(p => p.imageUrl === '/w2.jpg'),
-    PlaceHolderImages.find(p => p.imageUrl === '/w3.jpg')
-  ].filter(Boolean) as (typeof PlaceHolderImages[number])[];
+  const imageIds = ['w1', 'w2', 'w3'];
+  const galleryImages = imageIds.map(id => PlaceHolderImages.find(p => p.id === id)).filter(Boolean) as (typeof PlaceHolderImages[number])[];
 
   return (
     <section className="py-16 md:py-24 bg-secondary" id="gallery">
